@@ -1,0 +1,41 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 40px 40px;
+  margin: 0 auto;
+}
+.add-jokes {
+  background-color: #4169eb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.add-jokes:hover {
+  transition-duration: 0.4s;
+  color: #c6d311;
+}
+
+ul {
+  background: #cce5ff;
+  color: #4169eb;
+  margin: 5px 0;
+}
+li {
+  list-style-type: none;
+}
+
+.checked {
+  color: #2e31eb;
+  font-weight: 700;
+}
