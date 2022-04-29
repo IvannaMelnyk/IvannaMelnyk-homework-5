@@ -25,7 +25,8 @@ function deleteExpression() {
   console.log(this);
   let index = jokesArray.indexOf(this.textContent);
   console.log(index);
-  jokesArray.splice(index - 1, 1);
+  console.log(jokesArray);
+  jokesArray.splice(index, 1);
   console.log(jokesArray);
   this.parentElement.remove();
 }
@@ -44,6 +45,6 @@ function getJoke() {
     .then((data) => {
       createExpression(data.value);
       jokesArray.push(data.value);
-      // console.log(jokesArray);
+      console.log(jokesArray);
     });
 }
